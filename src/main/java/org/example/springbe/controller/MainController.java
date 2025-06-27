@@ -13,7 +13,7 @@ import java.util.List;
 @RestController
 @CrossOrigin(origins = "*", methods= RequestMethod.GET)
 public class MainController {
-    @GetMapping("/movies")
+    @GetMapping
     public MoviesDto hello() {
         MoviesDto movies = new MoviesDto();
         MovieDto movieDto = new MovieDto(1,"testMovie","https://yts.mx/assets/images/movies/the_pastor_2024/background.jpg","summaryTest");
