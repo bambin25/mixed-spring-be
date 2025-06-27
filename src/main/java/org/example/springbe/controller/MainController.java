@@ -22,5 +22,9 @@ public class MainController {
         movies.setMovies(moviesList);
         return movies;
     }
+    @GetMapping("/health")
+    public String healthCheck() {
+        return "ok";
+    }
 }
 
